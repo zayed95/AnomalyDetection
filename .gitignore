@@ -1,6 +1,6 @@
 .ipynb_checkpoints/
 .venv
-/venve
+venv/
 __pycache__/
 mlruns/
 malartifacts/
