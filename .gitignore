@@ -4,6 +4,7 @@ venv/
 __pycache__/
 mlruns/
 malartifacts/
+mlartifacts/3/models/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
