@@ -3,7 +3,7 @@ Anomaly Detection with Logistic Regression — Controlled Preprocessing Experime
 
 ---
 
-## Overview
+## Overviwe
 This project explores the impact of different preprocessing pipelines on a logistic regression–based anomaly detection system. Using controlled experiments tracked with MLflow, multiple preprocessing strategies are compared under fixed model hyperparameters. The best-performing pipeline is then fine-tuned and promoted through the MLflow Model Registry.
 
 ### Phase 1
@@ -37,6 +37,6 @@ MLflow was used to:
 
 ## How to run
 
-`pip install -r requirements.txt`
+```pip install -r requirements.txt```
 
-`mlflow ui`
+```mlflow ui```
