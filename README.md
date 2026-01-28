@@ -1,0 +1,42 @@
+# A/B testing with Logistic Regression
+Anomaly Detection with Logistic Regression — Controlled Preprocessing Experiments using MLflow.
+
+---
+
+## Overview
+This project explores the impact of different preprocessing pipelines on a logistic regression–based anomaly detection system. Using controlled experiments tracked with MLflow, multiple preprocessing strategies are compared under fixed model hyperparameters. The best-performing pipeline is then fine-tuned and promoted through the MLflow Model Registry.
+
+### Phase 1
+* Same model
+* Same hyperparameters
+* Same training and validation sets
+* Only the processing pipeline differ
+
+### Phase 2
+* Selected best perfoming model
+* Performed fine tuning to optimize anomaly recall
+* Final pipeline logged and registered
+
+### Evaluation Strategy
+* Recall was prioritized to minimize missed anomalies
+
+### ML Pipeline Design
+* Implemented leak-free sklearn / imblearn Pipelines
+* Preprocessing and model steps are versioned together
+* Ensures reproducibility across experiments
+
+### Experiment Tracking with MLflow
+MLflow was used to:
+
+* Track parameters and metrics
+* Log full preprocessing + model pipelines
+* Compare preprocessing strategies
+* Register the final model
+
+---
+
+## How to run
+
+`pip install -r requirements.txt`
+
+`mlflow ui`
