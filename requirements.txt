@@ -1,0 +1,5 @@
+scikit-learn==1.8.0
+mlflow==3.8.1
+pandas==2.3.3
+imbalanced-learn==0.14.1
+ipykernel
